@@ -2,3 +2,7 @@
     other = "Últimas Publicaciones"
 [index_blog_allPosts]
     other = "Todas las Publicaciones"
+[categories]
+    other = "categorias"
+[tags]
+    other = "etiquetas"

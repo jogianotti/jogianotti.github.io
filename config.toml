@@ -1,6 +1,6 @@
 baseURL = "https://jogianotti.github.io/"
-languageCode = "es-AR"
-DefaultContentLanguage = "es"
+languageCode = "es"
+defaultContentLanguage = "es"
 title = "Sitio personal"
 theme = "introduction"
 
