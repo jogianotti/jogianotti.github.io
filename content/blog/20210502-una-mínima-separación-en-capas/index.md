@@ -11,7 +11,7 @@ tags: [ dominio, infraestructura, tests ]
 #### Acoplamiento
 En desarrollo web es muy frecuente terminar con una arquitectura donde el nivel de acoplamiento dificulta la mantenibilidad del código de un proyecto.
 
-Yo fui culpable de estos "errores" que no siempre son errores, pero dado el caso de una aplicación con expectativas de crecimiento estos "errores" se deberían evitar.
+Yo fui culpable de este "error" que no siempre es un error, pero dado el caso de una aplicación con expectativas de crecimiento este "error" se deberían evitar.
 
 Cuando hablo de acoplamiento me refiero a un método controlador que se encarga de todo lo relacionado con la atención de una solicitud. Este método se encarga de recibir la solicitud, procesar los datos de entrada, ejecutar la lógica relacionada con el caso de uso, realizar tareas secundarias que se desprenden de ese caso de uso, comunicarse con servicios externos enviando o recibiendo datos, preparar los datos resultantes y por último retornar una respuesta.
 
@@ -19,7 +19,7 @@ Aquí pongo un ejemplo gráfico.
 
 {{< figure src="estado_inicial.png" >}}
 
-Se puede ver como el controlador gestiona la colaboración con el resto de las clases del sistema para atender la solicitud que recibe, siendo el responsable de todas las tareas mencionadas anteriormente.
+Se puede ver como el controlador gestiona y coordina la colaboración con el resto de las clases del sistema necesarias para atender la solicitud que recibe, siendo el responsable de todas las tareas mencionadas anteriormente.
 
 Lo más importante a prestar atención es el hecho de que es el controlador quien contiene la **lógica del caso de uso** lo que dificulta la reutilización del mismo y la incorporación de tests útiles.
 
