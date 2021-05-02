@@ -32,9 +32,9 @@ Si se quisiera reutilizar ese caso de uso, por ejemplo en un comando por consola
 
 Hay dos tareas relativamente sencillas que permiten tener una separación clara en dos capas. Una se suele nombrar como capa de **dominio** y la otra como capa de **infraestructura**. Nuestra capa de dominio contiene todo el código relacionado con nuestra **lógica de negocio**. Nuestra capa de infraestructura contiene todo el código que interviene en tareas de **entrada/salida**.
 
-Lo primero es agrupar toda la lógica del caso de uso en su propia clase que será inyectada como colaborador del controlador o de cualquier otra clase que la requiera. Esto permite la reutilización de ese caso de uso y manteniendo así la consistencia.
+Lo primero es agrupar toda la lógica del caso de uso en su propia clase que será inyectada como colaborador del controlador o de cualquier otra clase que la requiera. Esto permite la reutilización de ese caso de uso manteniendo así la consistencia.
 
-Lo segundo es implementar el **principio de inversión de dependencia (DIP)** para la relación con todos los servicios externos. Este principio establece que *"módulos de alto nivel no deberían depender de los de bajo nivel, ambos deberían depender de abstracciones"*. Entonces tomando este principio podemos decir que nuestro dominio no debería depender de un determinado servicio sino de una abstracción. Para lograr esto simplemente debemos establecer interfaces que definan el protocolo de comunicación con los diferentes servicios de nuestra aplicación y que nuestro dominio dependa solo de esas interfaces que serán nuestra abstracción.
+Lo segundo es implementar el **principio de inversión de dependencia (DIP)** para la relación con todos los servicios externos. Este principio establece que *"módulos de alto nivel no deberían depender de los de bajo nivel, ambos deberían depender de abstracciones"*. Entonces tomando este principio podemos decir que nuestro dominio no debería depender de un determinado servicio sino de una abstracción. Para lograr esto simplemente debemos establecer interfaces que definan el protocolo de comunicación con los diferentes servicios que utiliza nuestra aplicación y que nuestro dominio dependa solo de esas interfaces que serán nuestra abstracción.
 
 Para hacer bien gráfico este ejemplo aquí está la arquitectura a la que se pretende llegar con este proceso.
 
