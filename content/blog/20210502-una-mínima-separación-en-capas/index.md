@@ -2,11 +2,7 @@
 title: Una mínima separación en capas
 date: 2021-05-02T16:47:13-03:00
 description: Con una mínima separación de capas se puede obtener grandes beneficios
-<<<<<<< HEAD
 draft: false
-=======
-draft: true
->>>>>>> 05cfc725bcb8aabf432bf88c1aadc825b91e4b3c
 slug: una_mínima_separación_en_capas
 categories: [ arquitectura ]
 tags: [ dominio, infraestructura, tests ]
