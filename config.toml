@@ -1,8 +1,14 @@
 baseURL = "https://jogianotti.github.io/"
-languageCode = "es"
 defaultContentLanguage = "es"
-title = "Sitio personal"
 theme = "introduction"
+
+[languages]
+    [languages.es]
+        contentDir = "content/spanish"
+        title = "Sitio personal"
+    [languages.en]
+        contentDir = "content/english"
+        title = "Personal website"
 
 [params]
     [[params.social]]
