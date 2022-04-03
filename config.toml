@@ -6,9 +6,11 @@ theme = "introduction"
     [languages.es]
         contentDir = "content/spanish"
         title = "Sitio personal"
+        dateFormat = "2 de January de 2006"
     [languages.en]
         contentDir = "content/english"
         title = "Personal website"
+        dateFormat = "January 2, 2006"
 
 [params]
     [[params.social]]

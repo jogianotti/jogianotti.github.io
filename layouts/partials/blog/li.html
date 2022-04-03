@@ -1,6 +1,6 @@
 {{ range after 3 .Pages.ByPublishDate.Reverse }}
 <li class="post-item">
     <span><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></span>{{ if .Params.date }} -
-    <span>{{ .Date | time.Format (.Site.Params.dateFormat | default "02 de Jan de 2006") }}</span>{{ end }}
+    <span>{{ .Date | time.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>{{ end }}
 </li>
 {{ end }}
