@@ -6,6 +6,7 @@ draft: false
 slug: una_minima_separacion_en_capas
 categories: [ arquitectura ]
 tags: [ dominio, infraestructura, tests ]
+series: [ patrones ]
 ---
 
 #### Acoplamiento
